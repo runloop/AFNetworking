@@ -20,25 +20,53 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+//
+//  RLAFNetworking.h
+//  RLAFNetworking
+//
+//  Created by Daniel Wood on 10/06/2014.
+//  Copyright (c) 2014 Runloop Ltd. All rights reserved.
+//
+
 #import <Foundation/Foundation.h>
 #import <Availability.h>
 
+
+//! Project version number for RLAFNetworking.
+FOUNDATION_EXPORT double RLAFNetworkingVersionNumber;
+
+//! Project version string for RLAFNetworking.
+FOUNDATION_EXPORT const unsigned char RLAFNetworkingVersionString[];
+
+// In this header, you should import all the public headers of your framework using statements like #import <RLAFNetworking/PublicHeader.h>
+
+
 #ifndef _AFNETWORKING_
-    #define _AFNETWORKING_
+#define _AFNETWORKING_
 
-    #import "AFURLRequestSerialization.h"
-    #import "AFURLResponseSerialization.h"
-    #import "AFSecurityPolicy.h"
-    #import "AFNetworkReachabilityManager.h"
+#import <AFNetworking/AFURLRequestSerialization.h>
+#import <AFNetworking/AFURLResponseSerialization.h>
+#import <AFNetworking/AFSecurityPolicy.h>
+#import <AFNetworking/AFNetworkReachabilityManager.h>
 
-    #import "AFURLConnectionOperation.h"
-    #import "AFHTTPRequestOperation.h"
-    #import "AFHTTPRequestOperationManager.h"
+#import <AFNetworking/AFURLConnectionOperation.h>
+#import <AFNetworking/AFHTTPRequestOperation.h>
+#import <AFNetworking/AFHTTPRequestOperationManager.h>
 
-#if ( ( defined(__MAC_OS_X_VERSION_MAX_ALLOWED) && __MAC_OS_X_VERSION_MAX_ALLOWED >= 1090) || \
-      ( defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && __IPHONE_OS_VERSION_MAX_ALLOWED >= 70000 ) )
-    #import "AFURLSessionManager.h"
-    #import "AFHTTPSessionManager.h"
+#import <AFNetworking/AFNetworkActivityIndicatorManager.h>
+
+#import <AFNetworking/UIActivityIndicatorView+AFNetworking.h>
+#import <AFNetworking/UIAlertView+AFNetworking.h>
+#import <AFNetworking/UIButton+AFNetworking.h>
+#import <AFNetworking/UIImageView+AFNetworking.h>
+#import <AFNetworking/UIKit+AFNetworking.h>
+#import <AFNetworking/UIProgressView+AFNetworking.h>
+#import <AFNetworking/UIRefreshControl+AFNetworking.h>
+#import <AFNetworking/UIWebView+AFNetworking.h>
+
+#import <AFNetworking/AFURLSessionManager.h>
+#import <AFNetworking/AFHTTPSessionManager.h>
+
 #endif
 
 #endif /* _AFNETWORKING_ */
